@@ -40,7 +40,7 @@ assert_string_contains() {
 
   [[ ${ACTUAL} == *"${EXPECTED}"* ]] && return 0
   
-  printf "Assertion failed \nEXPECTED value \n\n%s \n\ndid not contain ACTUAL value\n\n%s \n\n" $EXPECTED $ACTUAL
+  printf "Assertion failed\n\n'%s' \n\ndid not contain \n\n'%s' \n\n" $EXPECTED $ACTUAL
   return 1
 }
 
